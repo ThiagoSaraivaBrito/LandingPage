@@ -5,10 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html,
+body {
     height: auto;
     width: auto;
-    
+
 }
 
 body {
@@ -70,7 +71,7 @@ nav {
 }
 
 
-nav > a {
+nav>a {
     background-color: rgb(241, 241, 241);
     width: 120px;
     height: 50px;
@@ -84,16 +85,16 @@ nav > a {
     color: black;
 }
 
-nav > a:nth-of-type(1) {
+nav>a:nth-of-type(1) {
     border-radius: 0 0 0 20px;
 }
 
-nav > a:nth-of-type(3) {
+nav>a:nth-of-type(3) {
     border-radius: 0 0 20px 0;
 }
 
 
-nav > a:hover {
+nav>a:hover {
     background-image: none;
     background-color: rgb(230, 230, 230);
     transition: .2s;
@@ -248,7 +249,7 @@ footer {
         margin-bottom: 60px;
     }
 
-    nav > a {
+    nav>a {
         width: 100px;
         position: relative;
         left: 0;
@@ -259,10 +260,18 @@ footer {
         width: 26.7%;
     }
 
+    main p {
+        text-indent: 20px;
+    }
+
     section {
         border-radius: 0;
         max-width: none;
         width: 100%;
+    }
+
+    #iconeProjetos {
+        gap: 5%;
     }
 
 
