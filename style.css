@@ -18,6 +18,11 @@ body {
     background-repeat: no-repeat;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     margin: 20px auto 0;
     max-width: 800px;
@@ -198,6 +203,7 @@ section:nth-of-type(3) {
     display: flex;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .projeto {
