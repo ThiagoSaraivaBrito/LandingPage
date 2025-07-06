@@ -12,6 +12,10 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: linear-gradient(rgb(0, 34, 85), rgb(134, 134, 134));
     background-size: cover;
@@ -47,6 +51,10 @@ header {
     box-shadow: rgba(0, 0, 0, 0.178) 0 0 10px;
 }
 
+#fotoPerfil:hover {
+    transform: scale(1.03);
+}
+
 #nome {
     text-align: center;
     font-size: 30px;
@@ -55,7 +63,7 @@ header {
 }
 
 #nome:hover {
-    text-shadow: rgba(0, 0, 0, 0.144) 0 0 5px;
+    transform: scale(1.03);
     cursor: default;
 
 }
@@ -277,8 +285,11 @@ footer {
     }
 
     #iconeProjetos {
-        gap: 5%;
+        gap: 3%;
     }
 
-
+    .projeto {
+        width: 150px;
+        height: 250px;
+    }
 }
