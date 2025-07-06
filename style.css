@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 400dvh;
+    width: 98vw;
+}
+
+body {
+    /* background-image: linear-gradient(rgb(0, 132, 255), rgb(163, 214, 255)); */
+    background-image: linear-gradient(rgb(0, 34, 85), rgb(233, 233, 233));
+
+}
+
+header {
+    margin: 20px auto 0;
+    max-width: 800px;
+    padding: 30px 0 60px 0;
+    background-image: linear-gradient(160deg, rgb(248, 248, 248), rgb(255, 255, 255), rgb(247, 247, 247));
+    border-radius: 50px 50px 50px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.082);
+    z-index: 2;
+    position: relative;
+}
+
+
+#fotoPerfil {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-image: url("fotoPerfil.jpg");
+    background-position: -55px center;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.178) 0 0 10px;
+}
+
+#nome {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+#nome:hover {
+    text-shadow: rgba(0, 0, 0, 0.144) 0 0 5px;
+    cursor: default;
+
+}
+
+#frase {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+#nav {
+    display: flex;
+    gap: none;
+    z-index: 1;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+nav {
+    /* background-image: linear-gradient(160deg, rgb(230, 230, 230), rgb(241, 241, 241), rgb(247, 247, 247)); */
+    background-color: rgb(241, 241, 241);
+    width: 120px;
+    height: 50px;
+    align-content: center;
+    font-weight: bolder;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.233) 0 0px 0px;
+    position: relative;
+    left: -220px;
+
+}
+
+nav:nth-of-type(1) {
+    border-radius: 0 0 0 20px;
+}
+
+nav:nth-of-type(3) {
+    border-radius: 0 0 20px 0;
+}
+
+
+nav:hover {
+    background-image: none;
+    background-color: rgb(236, 236, 236);
+    transition: .2s;
+}
+
+aside {
+    margin: 0 auto 110px;
+    padding: 30px;
+    max-width: 450px;
+    background-image: linear-gradient(160deg, rgb(248, 248, 248), rgb(255, 255, 255), rgb(247, 247, 247));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+aside>p {
+    margin-bottom: 20px;
+}
+
+#icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icones p {
+    font-weight: normal;
+}
+
+.iconesLink {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    padding: 7px;
+    border: solid rgb(236, 236, 236) 3px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.062) 0px 0px 5px;
+}
+
+.iconesLink:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.iconesLink:hover {
+    background-color: rgba(0, 0, 0, 0.014);
+    transform: scale(1.02);
+    transition: 0.070s;
+}
+
+main h1 {
+    font-size: 35px;
+    background-image: linear-gradient(to right, rgb(177, 177, 177) 20%, rgba(0, 0, 0, 0));
+    padding: 5px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+main p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-indent: 60px;
+}
+
+section {
+    margin: 0 auto 40px;
+    padding: 30px;
+    padding-left: 20px;
+    max-width: 800px;
+    background-image: linear-gradient(160deg, rgb(248, 248, 248), rgb(255, 255, 255), rgb(247, 247, 247));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+    border-radius: 20px;
+}
+
+
+
+@media (max-width: 900px) {
+    header {
+        max-width: 80%;
+        border-radius: 40px 40px 0px 0px;
+        padding-bottom: 6%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.068);
+    }
+
+    #fotoPerfil {
+        background-image: url("fotoPerfil.jpg");
+        background-position: -30px center;
+        background-size: 200px;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+    }
+
+    #frase {
+        padding: 10px 20px;
+    }
+
+    #nav {
+        gap: 0px;
+        margin-bottom: 60px;
+    }
+
+    nav {
+        width: 100px;
+        position: relative;
+        left: 0;
+        box-shadow: rgba(0, 0, 0, 0.233) 0 0px 0px;
+        background-image: none;
+        background-color: rgb(245, 245, 245);
+        border-radius: 0;
+        width: 26.7%;
+    }
+
+    section {
+        border-radius: 0;
+    }
+
+
+}
